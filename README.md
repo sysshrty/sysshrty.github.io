@@ -1,1 +1,0 @@
-# sysshrty.github.io
