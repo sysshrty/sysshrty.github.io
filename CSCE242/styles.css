@@ -9,10 +9,9 @@ body {
 }
 
 header {
-    background-color:#192221;
+    background-color:#1a2423;
     color: #A7D2C8; 
     padding: 10px;
-    /*text-align: center;*/
 }
 /*Navigation*/
 #main-nav a {
@@ -36,15 +35,12 @@ a {
     text-decoration: none;
     background:#6393A6;
     color: black; 
-    padding: 8px;
-    border-radius:3px;
+    padding: 5px;
+    border-radius:5px;
+    transition: background-color 0.3s ease;
 }
 a:hover {
     background: #F29A2E ;
-}
-
-img {
-    border-collapse: collapse;
 }
 
 ol li {
