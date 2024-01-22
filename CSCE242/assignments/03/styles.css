@@ -10,7 +10,6 @@ header {
 
 }
 
-/* Structure */
 
 #content {
     padding: 10px;
@@ -20,7 +19,10 @@ header {
     flex-wrap: wrap;
 }
 
-#main-header,
+#main-header {
+    background-color:#1f3b3d;
+}
+
 #main-content,
 #main-footer {
     background-color: #495548;
@@ -29,8 +31,6 @@ header {
     margin-bottom: 10px;
 }
 
-
-/* Main Navigation */
 
 #main-nav ul {
     padding-left: 0;
@@ -52,17 +52,13 @@ header {
 }
 
 
-/* Typography */
-
 h1 {
     color: darkslategray;
     text-align: center;
 }
 
 
-/* For larger resolutions */
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
     .columns {
         display: flex;
     }
@@ -78,7 +74,6 @@ h1 {
     }
     .columns img {
         max-width: 80%;
-        /* for centering */
         display: block;
         margin: auto;
     }

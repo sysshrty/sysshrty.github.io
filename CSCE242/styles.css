@@ -1,27 +1,33 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #6393A6; 
-    color:#790808; 
+    color: #790808; 
+    margin: 0;
 }
 
 #section {
-    background:#ECEEE3;
+    background: #ECEEE3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 header {
-    background-color:#1a2423;
+    background-color: #1a2423;
     color: #A7D2C8; 
     padding: 10px;
 }
-/*Navigation*/
+
+/* Navigation */
 #main-nav a {
     text-decoration: none;
     color: #d4f2f6; 
     padding: 10px 15px;
-    border-radius:5px;
+    border-radius: 5px;
 }
+
 #main-nav a:hover {
-    background-color:#BF6854;
+    background-color: #BF6854;
 }
 
 section {
@@ -29,22 +35,24 @@ section {
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
+    flex: 1;
 }
 
 a {
     text-decoration: none;
-    background:#6393A6;
+    background: #6393A6;
     color: black; 
     padding: 5px;
-    border-radius:5px;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+
 a:hover {
-    background: #F29A2E ;
+    background: #F29A2E;
 }
 
 ol li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -52,4 +60,112 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+.assignments {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.assignment {
+    width: 45%; 
+    margin: 10px;
+    padding: 15px;
+    background-color: #BBC4B3;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.assignment img {
+    max-width: 65%;
+    height: auto;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+    #section {
+        flex-direction: column;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #6393A6;
+    color: #790808;
+    margin: 0;
+}
+
+#section {
+    background: #ECEEE3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header {
+    background-color: #1a2423;
+    color: #A7D2C8;
+    padding: 10px;
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none;
+    color: #d4f2f6;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#main-nav a:hover {
+    background-color: #BF6854;
+}
+
+section {
+    background-color: #BBC4B3;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    background: #6393A6;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background: #F29A2E;
+}
+
+ol li {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #185679;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.assignment.landscape {
+    flex: 0 0 80%;
+}
+
+.assignment1 {
+    background-color: #AEC6CF;
+}
+
+.assignment2 {
+    background-color: #D4A5A5;
+}
+
+.assignment3 {
+    background-color: #B3C3D3;
 }

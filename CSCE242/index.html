@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-<div #id="section">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSCE 242 - Web Application</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -23,16 +21,38 @@
         <p>This <em>class</em> explores various aspects of creating interactive and engaging websites by learning HTML, CSS, and JavaScript to build dynamic websites.</p>
     </section>
 
-    <section>
-        <h2>Assignments</h2>
-        <ol>
-            <li><a href="https://sysshrty.github.io/CSCE242/assignments/01/index.html">Assignment 1 - Basic HTML</a></li>
-            <li><a href="https://sysshrty.github.io/CSCE242/assignments/02/index.html">Assignment 2 - Basic HTML 2</a></li>
-            <li><a href="https://sysshrty.github.io/CSCE242/assignments/03/index.html">Assignment 3 - Page Layout</a></li>
-            <li><a href="https://sysshrty.github.io/CSCE242/assignments/03/index.html">Assignment 4 - Main Page CSS</a></li>
-        </ol>
-    </section>
-</div>
+    <div id="section">
+        <section class="assignments">
+            <h2>Assignments</h2>
+            <div class="assignment landscape assignment1">
+                <h3>Assignment 1 - Basic HTML</h3>
+                <img src="images/assignment1.png" alt="Assignment 1 Screenshot">
+                <p>Introduction to fundamental HTML concepts, covering tags, elements, and document structure.</p>
+                <a href="https://sysshrty.github.io/CSCE242/assignments/01/index.html">View Assignment</a>
+            </div>
+
+            <div class="assignment assignment2">
+                <a href="https://sysshrty.github.io/CSCE242/assignments/02/index.html">
+                    Assignment 2 - Basic HTML 2
+                </a>
+                <p>Building on the basics, this assignment delves into more advanced HTML features, including forms and multimedia.</p>
+                <img src="images/assignment2.png" alt="Assignment 2 Screenshot">
+            </div>
+
+            <div class="assignment assignment3">
+                <a href="https://sysshrty.github.io/CSCE242/assignments/03/index.html">
+                    Assignment 3 - Page Layout
+                </a>
+                <p>Explore the principles of page layout using CSS, focusing on creating visually appealing and well-structured web pages.</p>
+                <img src="images/assignment3.png" alt="Assignment 3 Screenshot">
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CSCE 242 - Web Applications</p>
+    </footer>
 
 </body>
 
