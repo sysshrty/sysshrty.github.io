@@ -95,5 +95,6 @@ footer {
     }
     .assignment {
         width: 100%; 
+        flex: 1;
     }
 }
