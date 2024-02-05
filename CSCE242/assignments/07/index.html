@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Learning Javascript</h1>
+    <h1>Assignment 7</h1>
+    <div class="container">
+        <div class="column">
+            <h2>Change Image</h2>
+            <div class="image-container">
+                <img src="images/moun.png" alt="Image 1" onclick="changeImage(this)">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </div>
+        </div>
+
+        <div class="column2">
+            <h2>Slider Rotate</h2>
+            <img src="images/mtn.png" alt="Mtn Road">
+            <input type="range" min="0" max="360" value="0" oninput="rotateImage(this)">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+
+        <div class="column" onclick="addStar(event)">
+            <h2>Stars</h2>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
