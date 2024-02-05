@@ -30,6 +30,13 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
 }
+.column3 {
+    flex: 1;
+    margin: 10px;
+    background-color: rgb(72, 41, 101);
+    border-radius: 10px;
+    overflow: hidden;
+}
 .star {
     width: 20px;
     height: 20px;
@@ -52,6 +59,15 @@ h1 {
 
 .image-container img:hover {
     transform: rotate(360deg);
+}
+.image-container, .image-slider {
+    position: relative;
+    text-align: center;
+}
+
+.image-slider input {
+    width: 100%;
+    margin-top: 10px;
 }
 
 .stars {

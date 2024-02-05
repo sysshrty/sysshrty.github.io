@@ -1,14 +1,13 @@
 let pos = 0;
 
 const changeImage = (image) => {
-    // const image = document.getElementById("image");
-    // Change to a different image URL
+   
     image.src = "images/road.png";
 };
 
 const rotateImage = () => {
-    const slider = document.getElementById("slider");
-    const image = document.querySelector(".column2 img");
+    //const slider = document.getElementById("slider");
+    const image = document.querySelector(".image-slider input");
     const rotationValue = slider.value;
     image.style.transform = `rotate(${rotationValue}deg)`;
 };

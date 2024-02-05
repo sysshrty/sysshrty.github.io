@@ -20,19 +20,19 @@
 
         <div class="column2">
             <h2>Slider Rotate</h2>
-            <img src="images/mtn.png" alt="Mtn Road">
-            <input type="range" min="0" max="360" value="0" oninput="rotateImage(this)">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            <div class="image-slider">
+                <img src="images/mtn.png" alt="Mtn Road" id="sliderImage">
+                <input type="range" min="0" max="360" value="0" oninput="rotateImage()">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </div>
         </div>
 
-        <div class="column" onclick="addStar(event)">
+        <div class="column3" onclick="addStar(event)">
             <h2>Stars</h2>
         </div>
-        
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
 
