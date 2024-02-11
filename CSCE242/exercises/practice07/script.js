@@ -26,4 +26,3 @@ function addStar(event) {
 document.getElementById("image").onclick = changeImage;
 document.getElementById("slider").addEventListener("input", rotateImage);
 document.querySelector(".stars").onclick = addStar;
-

@@ -56,13 +56,15 @@ h1 {
     display: block;
     transition: transform 0.5s ease-in-out;
 }
-
+/*
 .image-container img:hover {
     transform: rotate(360deg);
 }
+*/
 .image-container, .image-slider {
     position: relative;
     text-align: center;
+    transform: rotate(360deg);
 }
 
 .image-slider input {

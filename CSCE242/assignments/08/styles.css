@@ -1,0 +1,200 @@
+/* General Styling */
+:root {
+    --primary-color: #1f3b3d;
+    --secondary-color: #014040;
+    --text-color: #C2B84E;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: 'Flamenco', cursive;
+    margin: 0;
+}
+.main-container {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+    flex: 1;
+    margin: 80px;
+    border-radius: 10px;
+    display: flex; /* Center everything */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+}
+/*structure*/
+h1, h2, h3 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+/*larger resolution*/
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container footer {
+    padding: 20px;
+}
+
+ul li {
+    margin-left: 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* Nav*/
+#main-nav {
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 7px;
+}
+#main-nav ul {
+    background-color:#0d1c1f;
+    color: var(--secondary-color);
+    padding-left: 0px;
+    list-style-type: none;
+    /*display- flex;*/
+    /*padding left: 10px 20px;*/
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #04090a;
+}
+
+#main-nav li {
+    margin-right: 20px;
+    background-color: #787231;
+    padding:10px;
+    margin: 2px 0;
+}
+/*YOGA*/
+
+#yoga-section.active {
+    display: block; /* Show the yoga section when active */
+}
+
+#yoga-section h3 {
+    color: var(--text-color);
+}
+
+#yoga-section ul {
+    color: var(--text-color);
+}
+
+#yoga-section img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* CSS styles for the yoga images */
+.yoga-slider-command {
+    display: none;
+}
+.yoga-images {
+    width: 100%;
+}
+
+.yoga-image.active {
+    display: block;
+    /* Add any additional styling for the active image */
+}
+.yoga-command-form{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  .yoga-range:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+  .yoga-range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  .yoga-range::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+
+/* Images */
+#ifs img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hamburger Menu */
+#nav-toggle div {
+    width:35px;
+    height: 4px;
+    background-color: #a5b1b1 ; 
+    margin: 6px 0;
+}
+
+
+/* Media Queries */
+@media (max-width: 900px) {
+
+    #main-nav-items {
+        display: flex;
+    }
+    #main-nav-items li {
+        flex: 1;
+    }
+    #main-nav-items a {
+        border-bottom: 2px solid transparent;
+    }
+    #main-nav-items a:hover{
+        border-bottom: 2px solid #b0cbce;
+    }
+    #main-nav-items {
+        display:none;
+    }
+    #nav-toogle {
+        display: none;
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    #ifs img {
+        width: 40%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    #yoga-section img {
+        width: 70%; 
+    }
+}

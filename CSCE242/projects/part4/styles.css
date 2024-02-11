@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #014040;
+  --secondary-color: #1f3b3d;
+  --text-color: #C2B84E;
+  --main-text-color:#025959;
+}
+body {
+  font-family: "flamenco", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-text-color);
+  color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: 2px solid black;
+ 
+}
+/* Main Navigation */
+
+#main-nav ul {
+  padding-left: 0px;
+}
+
+#main-nav li {
+  list-style-type: none;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#main-nav a:hover {
+  border-bottom: 1px solid #C2B84E;
+}
+
+
+/* Hamburger */
+
+#hamburger div {
+  width: 25px;
+  height: 2px;
+  background-color:#C2B84E;
+  margin: 6px 0;
+}
+.hide-small {
+  display: none;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+main {
+  margin-top: 20px;
+}
+
+.preview {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.preview img {
+  height: auto;
+  margin-bottom: 10px;
+  width:500px;
+  height:600px;
+}
+/*button*/
+.book-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #C2B84E;
+  border: none;
+  border-radius: 15px;
+}
+
+.book-btn:hover {background-color: black}
+
+.book-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .logo {
+      font-size: 1.2em;
+  }
+  #main-nav li {
+    display: inline-block;
+}
+  nav ul {
+      display: none;
+  }
+  .columns {
+    display: flex;
+}
+.col1of2 {
+    flex: 1;
+}
+  #hamburger {
+    display: none;
+}
+  .hide-small {
+    display: block;
+}
+
+
+}
