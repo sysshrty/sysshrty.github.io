@@ -15,3 +15,9 @@ const showHideNav = () => {
 };
 document.getElementById("hamburger").onclick = showHideNav;
 */
+
+const evalForm = (e) => {
+  e.percentDefault();
+  console.log("here");
+}
+document.getElementById("my-form").onsubmit = evalForm;

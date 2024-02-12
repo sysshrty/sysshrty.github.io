@@ -9,27 +9,83 @@
 <body>
 
 <div class="container">
-    <header>
+    <header id="main-header" class="padded-area">
         <div class="logo">Atomic Bar</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="review.html">Reviews</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="burger-menu">&#9776;</div>
+            <nav id="main-nav">
+                <div id="hamburger" class="hide-small">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="book.html" class="book-btn">Book Now!</a>
     </header>
 
     <main>
         <section class="preview">
             <h2>Reviews</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </section>
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <div class="reviewer-info">
+                    <h3>Paul Wall</h3>
+                    <p>Event Planner</p>
+                </div>
+                <div class="review-content">
+                    <p>"I recently hired Atomic Bar for a corporate event, and I couldn't be happier with the service. The mobile bar setup was a hit with our guests, and the themed cocktails were a big hit. The staff was professional, friendly, and went above and beyond to ensure everything ran smoothly. Highly recommend!"</p>
+                </div>
+            </div>
+        
+            <div class="review">
+                <div class="reviewer-info">
+                    <img src="customer2.jpg" alt="Customer 2">
+                    <h3>Monty Dutt</h3>
+                    <p>Event Host</p>
+                </div>
+                <div class="review-content">
+                    <p>"Best Birthday ever. Will tell everyone about this company."</p>
+                </div>
+            </div>
+        
+            <div class="review">
+                <div class="reviewer-info">
+                    <h3>Julien Baker</h3>
+                    <p>Event Host</p>
+                </div>
+                <div class="review-content">
+                    <p>"This company really knows your hospitality, even if there was an accident and emergency"</p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="reviewer-info">
+                    <h3>Unknown Customer</h3>
+                    <p>Event Host</p>
+                </div>
+                <div class="review-content">
+                    <p>"Would be nice if they had some food too..."</p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="reviewer-info">
+                    <h3>Bessie Tom</h3>
+                    <p>Event Host</p>
+                </div>
+                <div class="review-content">
+                    <p>"Atomic Bar needs more days available!"</p>
+                </div>
+            </div>
+        </section>
+        
 
 
     </main>

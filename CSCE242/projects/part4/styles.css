@@ -28,6 +28,20 @@ header {
   border: 2px solid black;
  
 }
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  margin:5px;
+  border: 5px solid #014040; 
+  margin-bottom: 15px;
+  box-sizing:border-box;
+}
 /* Main Navigation */
 
 #main-nav ul {
@@ -110,6 +124,23 @@ main {
   border: none;
   border-radius: 15px;
 }
+/*table*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #025959;
+  background:#272f30;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  background-color: #1f3b3d
+}
 
 .book-btn:hover {background-color: black}
 
@@ -122,8 +153,8 @@ main {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background: url(images/wedding.jpg) left top no-repeat, url(images/cocktail.jpg) right bottom no-repeat, url(images/server.jpg) left top repeat;
+  background-size: 130px, 130px, auto;
 }
 
 /* Media Queries */
@@ -148,6 +179,14 @@ footer {
 }
   .hide-small {
     display: block;
+}
+.preview img {
+  max-width: 25px;
+  display: flex;
+  margin: 10px;
+}
+.one {
+  flex: 1;
 }
 
 

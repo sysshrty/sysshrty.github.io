@@ -1,4 +1,4 @@
-/* General Styling */
+
 :root {
     --primary-color: #1f3b3d;
     --secondary-color: #014040;
@@ -11,39 +11,53 @@ body {
     font-family: 'Flamenco', cursive;
     margin: 0;
 }
-.main-container {
+.content {
     text-align: center;
     background-color: var(--primary-color);
     padding: 20px;
     flex: 1;
     margin: 80px;
     border-radius: 10px;
-    display: flex; /* Center everything */
     flex-direction: column; /* Arrange items in a column */
     align-items: center; /* Center items horizontally */
 }
-/*structure*/
-h1, h2, h3 {
+/*===Structure===*/
+h1 {
+    text-align: center;
+    color: #edeaca;
+}
+h2 {
     text-align: center;
     color: var(--text-color);
 }
+h3{
+    text-align: center;
+    color: #e1dca7;
 
-/*larger resolution*/
-
-.center {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin:5px;
+    border: 5px solid #014040; 
+    margin-bottom: 15px;
+    box-sizing:border-box;
+}
+
+/*Larger Rsolution*/
 .container {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 100px;
     margin: 0 auto;
     padding: 20px;
+    border: 2px solid #bfb64e;
 }
 .container footer {
     padding: 20px;
@@ -54,147 +68,206 @@ ul li {
     padding-left: 20px;
     text-align: left;
 }
-
-/* Nav*/
-#main-nav {
-    padding: 20px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
-    border-width: 7px;
+#command-column {
+    text-align: center;
+    margin: auto;
 }
-#main-nav ul {
+#command-box {
+    padding: 0;
+    width: 75%;
+    margin: auto;
+    color: #96aeb4;
+    border: 2px solid #bfb64e;
+}
+#command ul {
+    padding: 0;
+    margin: 0; 
+}
+
+#command ul li {
+    list-style: none; 
+}
+/* Hamburger Menu */
+#nav-toggle {
+    display: block;
+    cursor: pointer;
+    
+}
+#nav-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 100px;
+}
+
+#nav-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+/*=== Nav===*/
+#main-nav {
+    position: relative; 
+}
+#menu-bttn-txt {
+    padding: 0;
+    margin: 0;
+}
+
+
+#main-nav-items {
+    display:flex;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #0d1c1f;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#main-nav-items.active {
+    display: block;
+}
+
+#main-nav-items li {
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+}
+#nav-space {
     background-color:#0d1c1f;
     color: var(--secondary-color);
     padding-left: 0px;
     list-style-type: none;
-    /*display- flex;*/
-    /*padding left: 10px 20px;*/
+}
+#main-nav h1 {
+   color: var(--text-color);
 }
 
-#main-nav a {
+#main-list {
     text-decoration: none;
     color: #04090a;
 }
+#main-nav-items a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+#main-nav-items a:hover {
+    background-color: #787231;
+}
 
-#main-nav li {
+#nav li {
     margin-right: 20px;
     background-color: #787231;
     padding:10px;
     margin: 2px 0;
 }
+#command-button {
+    background-color: #787231;
+}
+#yoga-button {
+    background-color: #787231;
+}
+
 /*YOGA*/
-
-#yoga-section.active {
-    display: block; /* Show the yoga section when active */
-}
-
-#yoga-section h3 {
-    color: var(--text-color);
-}
-
-#yoga-section ul {
-    color: var(--text-color);
-}
-
-#yoga-section img {
-    width: 40%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-/* CSS styles for the yoga images */
-.yoga-slider-command {
-    display: none;
-}
-.yoga-images {
+#yoga-slider {
+    appearance: none;
     width: 100%;
+    height: 25px;
+    margin-top: 0;
+    background: #4c6264;
+    border: 2px solid #bfb64e;
+}
+/*w3school*/
+#yoga-slider::-webkit-slider-thumb {
+    appearance: none;
+    border-radius: 0;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    background: #2c5d69;
+    cursor: pointer;
 }
 
-.yoga-image.active {
-    display: block;
-    /* Add any additional styling for the active image */
+/*For Firefox help idea*/
+#yoga-slider::-moz-range-thumb {
+    appearance: none;
+    border-radius: 0;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    background: #4c6264;
+    cursor: pointer;
 }
-.yoga-command-form{
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
-    background: #d3d3d3; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  .yoga-range:hover {
-    opacity: 1; /* Fully shown on mouse-over */
-  }
-  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
-  .yoga-range::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #04AA6D; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-  .yoga-range::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #04AA6D; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
+#yoga-img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+/* Images */
+#command-img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
 
 
 /* Images */
 #ifs img {
-    width: 40%;
-    height: auto;
     display: block;
-    margin: 0 auto;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
 }
 
-/* Hamburger Menu */
-#nav-toggle div {
-    width:35px;
-    height: 4px;
-    background-color: #a5b1b1 ; 
-    margin: 6px 0;
-}
+
 
 
 /* Media Queries */
 @media (max-width: 900px) {
-
-    #main-nav-items {
+    .content {
         display: flex;
     }
-    #main-nav-items li {
-        flex: 1;
+
+    nav {
+        margin: auto;
     }
-    #main-nav-items a {
-        border-bottom: 2px solid transparent;
+
+    #nav-space {
+        width: 100px;
+        margin: auto;
     }
-    #main-nav-items a:hover{
-        border-bottom: 2px solid #b0cbce;
-    }
-    #main-nav-items {
-        display:none;
-    }
-    #nav-toogle {
+
+    #menu-button {
         display: none;
     }
-    h1, h2, h3 {
+
+    #nav-list {
+        display: flex;
+        padding: 0;
+    }
+
+    #nav-list li {
         text-align: center;
     }
 
-    #ifs img {
-        width: 40%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
+    #nav-list li:last-child::after {
+        content: none;
     }
-    #yoga-section img {
-        width: 70%; 
+
+    #nav-list li::after {
+        color: var(--secondary-color);
     }
+    #nav-list{
+        display:none;
+    }
+   
+    
 }

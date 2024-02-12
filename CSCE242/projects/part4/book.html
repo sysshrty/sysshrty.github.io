@@ -9,37 +9,96 @@
 <body>
 
 <div class="container">
-    <header>
+    <header id="main-header" class="padded-area">
         <div class="logo">Atomic Bar</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="review.html">Reviews</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="burger-menu">&#9776;</div>
+            <nav id="main-nav">
+                <div id="hamburger" class="hide-small">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="book.html" class="book-btn">Book Now!</a>
     </header>
 
     <main id="main-content">
         <section class="book-preview">
-            <h2>Book Now!</h2>
-            <img src="https://place-hold.it/800x400" alt="Book Preview">
+            <h2>Glad You're Here!</h2>
             <p>
                 Ready for an amazing mobile bar experience? let us bring the party to you!
             </p>
             <a href="#">Contact Us</a>
         </section>
+        <section>
+            <h3>Fill Out Form</h3>
+          </section>
+          <section class="one">
+              <h3>Enter your Information to book</h3>
+              <form id="my-form" actions="#" method="get">
+                  <p>
+                      <label for = "txt-first-name"> First Name:</label>
+                      <input name="text-first-name">
+                  </p>
+                  <p>
+                      <label for="txt-last-name"> Last Name:</label>
+                      <input name="text-last-name">
+                      <span class="error" id="error-last-name"></span>
+                      <!--html for-validation, length validation-->
+                  </p>
+                  <p>
+                    <label for="txt-last-name"> Date:</label>
+                    <input name="text-last-name">
+                    <span class="error" id="error-last-name"></span>
+                    <!--html for-validation, length validation-->
+                </p>
+                <p>
+                    <label for="txt-last-name"> Type of Theme:</label>
+                    <input name="text-last-name">
+                    <span class="error" id="error-last-name"></span>
+                    <!--html for-validation, length validation-->
+                </p>
+                <p>
+                    <label for="txt-last-name"> Location:</label>
+                    <input name="text-last-name">
+                    <span class="error" id="error-last-name"></span>
+                    <!--html for-validation, length validation-->
+                </p>
+                <p>
+                    <label for="txt-last-name"> Number of Guests:</label>
+                    <input name="text-last-name">
+                    <span class="error" id="error-last-name"></span>
+                    <!--html for-validation, length validation-->
+                </p>
+                <p>
+                    <label for="txt-last-name"> Phone Number:</label>
+                    <input name="text-last-name">
+                    <span class="error" id="error-last-name"></span>
+                    <!--html for-validation, length validation-->
+                </p>
+                <p>
+                    <label for="txt-last-name"> Email Address:</label>
+                    <input name="text-last-name">
+                    <span class="error" id="error-last-name"></span>
+                    <!--html for-validation, length validation-->
+                </p>
+                  <button type="submit"></button>
+              </form>
+          </section>
 
 
     </main>
 
     <footer>
-        <p>&copy; 2024 Atomnic Bar. All rights reserved.</p>
+        <p>&copy; 2024 Atomnic Bar-Sherry Begay. All rights reserved.</p>
     </footer>
 </div>
 
