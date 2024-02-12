@@ -124,6 +124,28 @@ main {
   border: none;
   border-radius: 15px;
 }
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.image {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
+
 /*table*/
 table {
   border-collapse: collapse;
@@ -156,6 +178,7 @@ footer {
   background: url(images/wedding.jpg) left top no-repeat, url(images/cocktail.jpg) right bottom no-repeat, url(images/server.jpg) left top repeat;
   background-size: 130px, 130px, auto;
 }
+
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
