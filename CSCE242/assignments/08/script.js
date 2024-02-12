@@ -9,8 +9,8 @@ const toggleCommand = () => {
     }
 };
 
-const runCommand = () => {
-    const command = document.getElementById("command-box").value.toLowerCase().trim().slice(-1);
+const ExOneCommand = () => {
+    const command = document.getElementById("command-container").value.toLowerCase().trim().slice(-1);
     const image = document.getElementById("command-img");
     if (command =='b') {
         image.src = "images/read.jpg";
@@ -27,6 +27,28 @@ const runCommand = () => {
     }
 };
 
+const changeYoga = () => {
+    const poses = document.getElementById("yoga-slider").value;
+    const image = document.getElementById("yoga-img");
+    if (poses == 1) {
+        image.src = "images/yoga1.jpg";
+    } else if (poses == 2) {
+        image.src = "images/yoga2.jpg";
+    } else if (poses == 3) {
+        image.src = "images/yoga3.jpg";
+    } else if (poses == 4) {
+        image.src = "images/yoga4.jpg";
+    } else if (poses == 5) {
+        image.src = "images/yoga5.jpg";
+    } else if (poses == 6) {
+        image.src = "images/yoga6.jpg";
+    } else if (poses == 7) {
+        image.src = "images/yoga7.jpg";
+    } else if (poses == 8) {
+        image.src = "images/yoga8.jpg";
+    }
+};
+
 const toggleYoga = () => {
     const yoga = document.getElementById("yoga-content-id");
     const command = document.getElementById("enter-command");
@@ -38,31 +60,9 @@ const toggleYoga = () => {
     }
 };
 
-const changeYogaPose = () => {
-    const pose = document.getElementById("yoga-slider").value;
-    const image = document.getElementById("yoga-img");
-    if (pose == 1) {
-        image.src = "images/yoga1.jpg";
-    } else if (pose == 2) {
-        image.src = "images/yoga2.jpg";
-    } else if (pose == 3) {
-        image.src = "images/yoga3.jpg";
-    } else if (pose == 4) {
-        image.src = "images/yoga4.jpg";
-    } else if (pose == 5) {
-        image.src = "images/yoga5.jpg";
-    } else if (pose == 6) {
-        image.src = "images/yoga6.jpg";
-    } else if (pose == 7) {
-        image.src = "images/yoga7.jpg";
-    } else if (pose == 8) {
-        image.src = "images/yoga8.jpg";
-    }
-};
-
-document.getElementById("command-button").onclick = toggleCommand;
-document.getElementById("command-box").onkeyup = runCommand;
-document.getElementById("yoga-button").onclick = toggleYoga;
-document.getElementById("yoga-slider").oninput = changeYogaPose;
+document.getElementById("command-btn").onclick = toggleCommand;
+document.getElementById("command-container").onkeyup = ExOneCommand;
+document.getElementById("yoga-btn").onclick = toggleYoga;
+document.getElementById("yoga-slider").oninput = changeYoga;
 
 

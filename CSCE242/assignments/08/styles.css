@@ -165,10 +165,10 @@ ul li {
     padding:10px;
     margin: 2px 0;
 }
-#command-button {
+#command-btn{
     background-color: #787231;
 }
-#yoga-button {
+#yoga-btn {
     background-color: #787231;
 }
 
@@ -236,7 +236,7 @@ ul li {
         display: flex;
     }
 
-    nav {
+    #nav {
         margin: auto;
     }
 
