@@ -1,0 +1,213 @@
+:root {
+  /*start*/
+  --ball-position: 0px;
+  --main: #F5F2B8;
+  --secondary: #DCF5B2;
+  --background: #B5F9FF;
+  --inside: white;
+  --text1:black;
+  --text2:#05FCE3;
+}
+/* Structure */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--main);
+}
+
+.content {
+  background: var(--background);
+  padding: 20px;
+  width: 30%;
+  margin: 25px auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#content-inside {
+  background: var(--secondary);
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  width: 35%;
+  margin: 25px auto;
+}
+#content-inside img {
+  height:50px;
+  width:50px;
+  padding: 5px;
+  image-rendering: auto;
+}
+
+.hide {
+  display: none;
+}
+
+/* Typography */
+
+h1 {
+  color: var(--text1);
+  background: #B3F5BE;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+}
+h2 {
+  color: #05C6FC;
+  text-align: center;
+  text-decoration: none;
+
+}
+h3 {
+  color:#59D9FC;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Navigation */
+
+button {
+  background: none;
+  cursor: pointer;
+  color: black;
+}
+
+nav {
+  margin-left: 10%;
+}
+
+#menu-btn {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  
+}
+
+#menu-btn p {
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+}
+
+nav ul {
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+nav li {
+  list-style: none;
+  
+}
+
+/* Bounce Ball */
+
+#start-stop-text {
+  text-align: center;
+  border-radius: 0%;
+}
+
+#soccer {
+  display: block;
+  width: 75px;
+  margin: auto;
+  margin-top: var(--ball-position);
+}
+
+#interval-surface{
+  background: var(--inside);
+  border: 2px solid var(--secondary);
+  height: 800px;
+  width: 150px;
+  margin: auto;
+}
+#ball-btn {
+  margin: 20px 20px;
+  align-content: center;
+}
+
+/* Yoga Fun */
+
+#image-list {
+  background: var(--secondary);
+  border: 2px solid black;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#image-list li {
+  display: flex;
+  padding-left: 0;
+  margin-left: 5px;
+}
+#image-list img {
+  display: block;
+  width: 50%;
+  margin: 2px auto;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.yoga-container {
+  display: flex;
+}
+
+#image-list {
+  flex: 1;
+}
+
+#description {
+  flex: 1;
+  padding-left: 20px;
+}
+
+
+/*footer*/
+
+#footer {
+  align-content: flex-end;
+  text-align: center;
+}
+
+/* Larger Resolutions */
+
+@media only screen and (min-width: 700px) {
+  .content {
+      width: 30%;
+  }
+  
+  #menu-btn {
+    display: none; 
+ }
+
+  nav {
+    margin: auto;
+  }
+
+  #navigation {
+    margin: auto;
+    width: 150px;
+        
+  }
+  #interval-surface {
+    display:flex;
+  }
+  #nav-list {
+    display: flex;
+    padding: 0;
+ } 
+
+ #nav-list li {
+    text-align: center;
+ }
+
+  #nav-list li:last-child::after {
+      content: none;
+  }
+
+  #nav-list li::after {
+      color: var(--text1);
+  }
+  
+}

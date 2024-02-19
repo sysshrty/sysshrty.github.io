@@ -1,8 +1,7 @@
+const showHideNav = () => {
+  document.getElementById("nav-items").classList.toggle("hide-small");
+};
 
-
-const toggleHamburger = () => {
-    document.getElementById("nav-items").classList.toggle("hide-small");
-  };
   window.onload = () => {
     document.getElementById("hamburger").onclick = toggleHamburger;
   };
@@ -13,3 +12,4 @@ const evalForm = (e) => {
   console.log("here");
 }
 document.getElementById("my-form").onsubmit = evalForm;
+document.getElementById("hamburger").onclick = showHideNav;
