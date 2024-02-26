@@ -7,20 +7,20 @@ imageList["golden.jpg"] = ["https://www.freepik.com/free-photo/wide-angle-shot-s
 
 
 const displayImages = () => {
-    const imagesDiv = document.getElementById("images");
+    const imagesContainer = document.getElementById("images");
     for (let imageName in imageList) {
-        const img = document.createElement("img");
-        img.src = `images/${imageName}`;
-        img.classList.add("image");
-        const attrP = document.createElement("p");
-        const attrA = document.createElement("a");
-        attrA.href = imageList[imageName][0];
-        attrA.textContent = imageList[imageName][1];
-        //set child append
-        attrP.appendChild(attrA);
-        attrP.insertAdjacentText("beforeend", " on Freepik");
-        imagesDiv.appendChild(img);
-        imagesDiv.appendChild(attrP);
+        const imageElement = document.createElement("img");
+        imageElement.src = `images/${imageName}`;
+        imageElement.classList.add("image");
+        const attributionParagraph = document.createElement("p");
+        const attributionLink = document.createElement("a");
+        attributionLink.href = imageList[imageName][0];
+        attributionLink.textContent = imageList[imageName][1];
+        // Appending children
+        attributionParagraph.appendChild(attributionLink);
+        attributionParagraph.insertAdjacentText("beforeend", " on Freepik");
+        imagesContainer.appendChild(imageElement);
+        imagesContainer.appendChild(attributionParagraph);
     }
 };
 
