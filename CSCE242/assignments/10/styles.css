@@ -1,0 +1,49 @@
+:root {
+    --main:#2D3540;
+    --secondary:#6A7173;
+    --content: #D9BB96;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--main);
+}
+
+/* Structure */
+
+main {
+    margin: auto;
+    width: 70%;
+}
+
+.content{
+    background: var(--content);
+    border: 2px solid var(--secondary);
+    padding: 10px;
+    margin: auto;
+}
+
+#text {
+    text-align: center;
+}
+
+.image {
+    padding-top: 10px;
+    margin: auto;
+    width: auto;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, h3, p, a {
+    color: var(--secondary);
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+    main {
+        width: 50%;
+    }
+}
