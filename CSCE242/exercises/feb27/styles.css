@@ -1,0 +1,131 @@
+:root {
+  --main: #2D3540;
+  --secondary: #6A7173;
+  --content: #D9BB96;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--main);
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: var(--secondary);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.image {
+  max-width: 50%;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  
+}
+/* Define custom styles */
+.blood-types {
+  margin: 60px;
+  padding:5px;
+  width:80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blood-section {
+  flex: 1;
+  margin: 5px;
+  padding:10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  text-align: center; 
+  background-color:var(--content);
+}
+.blood-section img {
+max-width: 80%;
+display: flex;
+margin: auto;
+}
+
+.blood-section:hover {
+  transform: scale(1.05);
+}
+
+.blood-section h3 {
+  margin-top: 10px; /* Add some space below the title */
+}
+/*
+.blood-section img {
+  max-width: 50%;
+  height: auto;
+  cursor: pointer;
+}
+*/
+.blood-section img {
+  max-width: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* Add style for the image inside the modal */
+#modal-content img {
+  max-width: 20%;
+  float: right;
+}
+
+section {
+  margin-bottom: 20px;
+}
+.w3-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.w3-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.w3-container {
+  text-align: left;
+}
+
+.w3-button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.w3-button:hover {
+  color: #000;
+}
+
+/* Media Query for Responsive Layout */
+@media screen and (max-width: 600px) {
+  
+  .blood-types {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  #modal-content img {
+      max-width: 50%;
+      margin-bottom: 10px;
+  }
+
+  
+}
