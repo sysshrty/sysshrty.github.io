@@ -27,7 +27,6 @@ header, footer {
 }
 /* Define custom styles */
 .blood-types {
-    flex: 1 0 45%;
     margin: 60px;
     padding:5px;
     width:80%;
@@ -37,8 +36,8 @@ header, footer {
 }
 
 .blood-section {
-    flex: 1 0 45%;
-    margin: 80px;
+    flex:1;
+    margin: 50px;
     padding:10px;
     cursor: pointer;
     transition: transform 0.3s;
@@ -46,9 +45,10 @@ header, footer {
     background-color:var(--content);
 }
 .blood-section img {
-  max-width: 30%;
+  max-width: 80%;
   display: flex;
   margin: auto;
+  display: block;
 }
 
 .blood-section:hover {
@@ -65,11 +65,7 @@ header, footer {
     cursor: pointer;
 }
 */
-.blood-section img {
-    max-width: 30%;
-    display: block;
-    margin: auto;
-}
+
 
 /* Add style for the image inside the modal */
 #modal-content img {
@@ -120,16 +116,18 @@ section {
     
     .blood-types {
         display: flex;
-        flex-wrap: wrap;
+        max-width: 80%;
+        display: flex;
+        margin: auto;
+        display: block;
+
     }
 
     #modal-content img {
         max-width: 50%;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
-    .blood-section {
-        flex: 1;
-    }
+    
     
 }
 
