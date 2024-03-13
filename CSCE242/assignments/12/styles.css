@@ -1,0 +1,154 @@
+:root {
+    --main: #8FBFBF;
+    --secondary: #CCD9BF;
+    --third: #CCD9BF;
+    --text: #6F9CA6;
+    --display: #D94A4A;
+    --text2: black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--main);
+	margin: 0;
+    padding: 10px;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+/* Navigation */
+#main-nav ul {
+	padding-left: 0px;
+	list-style-type: none;
+  }
+  
+  #main-nav li {
+	background: var(--secondary);
+	padding: 10px;
+	margin: 2px 0;
+  }
+  
+  #main-nav a {
+	text-decoration: none;
+	color: blanchedalmond;
+  }
+  
+  /* Hamburger Menu */
+  #nav-toggle div {
+	width: 35px;
+	height: 5px;
+	background-color: var(--text2);
+	margin: 6px 0;
+  }
+
+.info {
+    background: var(--display);
+}
+
+.main-image {
+    display: block;
+    margin: auto;
+	border-radius: 8px;
+}
+
+.house {
+    background: var(--text);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.level-image {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+/* Typography */
+h1, h2, h3, p, a {
+    text-align: center;
+}
+/*different color text*/
+h1 {
+    color: var(--display);
+}
+
+h2 {
+    color: var(--third);
+}
+
+h3 {
+    color: var(--text2);
+}
+
+p, a {
+    color: var(--secondary);
+}
+#main-nav-items {
+	font-size: 1.2em;
+  }
+  
+  .hidden {
+	display: none;
+  }
+  
+  .hide {
+	visibility: hidden;
+  }
+
+/* full Screen*/
+@media only screen and (min-width: 650px) {
+    main {
+        width: 80%;
+    }
+	#main-nav-items,
+	.form-element {
+	  display: flex;
+	}
+  
+	#main-nav-items li {
+	  flex: 1;
+	}
+  
+	#main-nav-items a {
+	  border-bottom: 2px solid transparent;
+	}
+  
+	#main-nav-items a:hover {
+	  border-bottom: 2px solid var(--text2);
+	}
+  
+	#nav-toggle {
+	  display: none;
+	}
+
+    .info {
+        display: flex;
+    }
+
+    .info p {
+        text-align: left;
+    }
+
+    .levels {
+        display: flex;
+        margin: auto;
+    }
+
+    .level {
+        padding: 20px;
+        margin: auto;
+    }
+	.main-image {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .info-text {
+        margin-left: 10px;
+    }
+}
