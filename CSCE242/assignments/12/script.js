@@ -21,13 +21,13 @@ const createHouseElement = (house) => {
     const houseSection = document.createElement("section");
     houseSection.classList.add("house");
 
-    const nameH2 = document.createElement("h2");
-    nameH2.textContent = house.name;
-    houseSection.append(nameH2);
+    const h2 = document.createElement("h2");
+    h2.textContent = house.name;
+    houseSection.append(h2);
 
     const mainInfoDiv = document.createElement("div");
     mainInfoDiv.classList.add("info");
-
+	//connected to instructor's json for images
     const houseImage = document.createElement("img");
     houseImage.src = `https://portiaportia.github.io/json/images/house-plans/${house.main_image}`;
     houseImage.classList.add("main-image");
@@ -36,30 +36,30 @@ const createHouseElement = (house) => {
     const infoSection = document.createElement("section");
     infoSection.classList.add("info-text");
 
-    const sizeP = document.createElement("p");
-    sizeP.innerHTML = `<strong>Size</strong>: ${house.size}`;
-    infoSection.append(sizeP);
+    const roomSize = document.createElement("p");
+    roomSize.innerHTML = `<strong>Size</strong>: ${house.size}`;
+    infoSection.append(roomSize);
 
-    const bedroomsP = document.createElement("p");
-    bedroomsP.innerHTML = `<strong>Bedrooms</strong>: ${house.bedrooms}`;
-    infoSection.append(bedroomsP);
+    const bedroomNum = document.createElement("p");
+    bedroomNum.innerHTML = `<strong>Bedrooms</strong>: ${house.bedrooms}`;
+    infoSection.append(bedroomNum);
 
-    const bathroomsP = document.createElement("p");
-    bathroomsP.innerHTML = `<strong>Bathrooms</strong>: ${house.bathrooms}`;
-    infoSection.append(bathroomsP);
+    const bathroomNum = document.createElement("p");
+    bathroomNum.innerHTML = `<strong>Bathrooms</strong>: ${house.bathrooms}`;
+    infoSection.append(bathroomNum);
 
-    const featuresP = document.createElement("p");
+    const featuresOfHomes = document.createElement("p");
     house.features.forEach((feature) => {
-        featuresP.innerHTML += `* ${feature} `;
+        featuresOfHomes.innerHTML += `* ${feature} `;
     });
-    infoSection.append(featuresP);
+    infoSection.append(featuresOfHomes);
 
     mainInfoDiv.append(infoSection);
     houseSection.append(mainInfoDiv);
 
     const levelDiv = document.createElement("div");
     levelDiv.classList.add("levels");
-
+	//for loop inside floor_plan 
     house.floor_plans.forEach((level) => {
         levelDiv.append(createLevelElement(level));
     });
@@ -71,10 +71,10 @@ const createHouseElement = (house) => {
 const createLevelElement = (level) => {
     const levelSection = document.createElement("section");
     levelSection.classList.add("level");
-
-    const nameH3 = document.createElement("h3");
-    nameH3.textContent = level.name;
-    levelSection.append(nameH3);
+	//third house
+    const h3 = document.createElement("h3");
+    h3.textContent = level.name;
+    levelSection.append(h3);
 
     const levelImage = document.createElement("img");
     levelImage.src = `https://portiaportia.github.io/json/images/house-plans/${level.image}`;
