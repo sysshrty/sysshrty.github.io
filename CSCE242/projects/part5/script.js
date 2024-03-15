@@ -1,45 +1,45 @@
-const getShoes = async() => {
-    const url = "https://sysshrty.github.io/CSCE242/json/menu.json";
-
+const fetchCocktails = async () => {
+    const url = "http//sysshrty.github.io/CSCE242/json/menu.json";
     try {
         const response = await fetch(url);
         return response.json();
     } catch (error) {
-        console.log(error);
+        console.error(error);
+        // Handle error
     }
 };
- const showCocktails = async () => {
-    const cocktails = await getCocktails();
-    const cocktailMenuDiv = document.getElementById("cocktail-menu");
-  
-    cocktails.forEach(cocktail => {
-        cocktailMenuDiv.append(getCocktailSection(cocktail));
+
+const displayCocktails = async () => {
+    const cocktailList = await fetchCocktails();
+    const cocktailMenu = document.getElementById("cocktail-menu");
+    cocktailList.forEach((cocktail) => {
+        cocktailMenu.append(createCocktailElement(cocktail));
     });
-  };
-  
-  const getCocktailSection = (cocktail) => {
-    const section = document.createElement("section");
-    section.classList.add("cocktail-item");
-  
+};
+
+const createCocktailElement = (cocktail) => {
+    const cocktailItem = document.createElement("div");
+    cocktailItem.classList.add("cocktail-item");
+
     const name = document.createElement("h2");
     name.textContent = cocktail.name;
-  
+    cocktailItem.appendChild(name);
+
     const img = document.createElement("img");
-    img.src = "images/" + cocktail.img_name;
+    img.src = cocktail.img_name;
     img.alt = cocktail.name;
-  
+    cocktailItem.appendChild(img);
+
     const description = document.createElement("p");
     description.textContent = cocktail.description;
-  
+    cocktailItem.appendChild(description);
+
     const price = document.createElement("p");
     price.textContent = "Price: " + cocktail.price;
-  
-    section.appendChild(name);
-    section.appendChild(img);
-    section.appendChild(description);
-    section.appendChild(price);
-  
-    return section;
-  };
-  
-  window.onload = () => showCocktails();
+    cocktailItem.appendChild(price);
+
+    return cocktailItem;
+};
+
+window.onload = () => displayCocktails();
+
