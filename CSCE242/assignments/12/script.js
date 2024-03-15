@@ -18,68 +18,68 @@ const displayHouses = async () => {
 };
 
 const createHouseElement = (house) => {
-    const houseSection = createHTMLElement("section", "house");
+    const houseSection = document.createElement("section");
+    houseSection.classList.add("house");
 
-    const h2 = createHTMLElement("h2", null, house.name);
-    houseSection.appendChild(h2);
+    const h2 = document.createElement("h2");
+    h2.textContent = house.name;
+    houseSection.append(h2);
 
-    const mainInfoDiv = createHTMLElement("div", "info");
+    const mainInfoDiv = document.createElement("div");
+    mainInfoDiv.classList.add("info");
 
-    const houseImage = createHTMLElement("img", "main-image");
+    const houseImage = document.createElement("img");
     houseImage.src = `https://portiaportia.github.io/json/images/house-plans/${house.main_image}`;
-    mainInfoDiv.appendChild(houseImage);
-    //organized by looking at json file
-    const infoSection = createHTMLElement("section", "info-text");
-    const roomSize = createParagraphElement(`<strong>Size</strong>: ${house.size}`);
-    const bedroomNum = createParagraphElement(`<strong>Bedrooms</strong>: ${house.bedrooms}`);
-    const bathroomNum = createParagraphElement(`<strong>Bathrooms</strong>: ${house.bathrooms}`);
-    const featuresOfHomes = createFeaturesElement(house.features);
+    houseImage.classList.add("main-image");
+    mainInfoDiv.append(houseImage);
 
-    infoSection.append(roomSize, bedroomNum, bathroomNum, featuresOfHomes);
-    mainInfoDiv.appendChild(infoSection);
-    houseSection.appendChild(mainInfoDiv);
+    const infoSection = document.createElement("section");
+    infoSection.classList.add("info-text");
 
-    const levelDiv = createHTMLElement("div", "levels");
-    house.floor_plans.forEach((level) => {
-        levelDiv.appendChild(createLevelElement(level));
+    const sizeP = document.createElement("p");
+    sizeP.innerHTML = `<strong>Size</strong>: ${house.size}`;
+    infoSection.append(sizeP);
+
+    const bedroomsP = document.createElement("p");
+    bedroomsP.innerHTML = `<strong>Bedrooms</strong>: ${house.bedrooms}`;
+    infoSection.append(bedroomsP);
+
+    const bathroomsP = document.createElement("p");
+    bathroomsP.innerHTML = `<strong>Bathrooms</strong>: ${house.bathrooms}`;
+    infoSection.append(bathroomsP);
+
+    const featuresP = document.createElement("p");
+    house.features.forEach((feature) => {
+        featuresP.innerHTML += `* ${feature} `;
     });
-    houseSection.appendChild(levelDiv);
+    infoSection.append(featuresP);
 
+    mainInfoDiv.append(infoSection);
+    houseSection.append(mainInfoDiv);
+
+    const levelDiv = document.createElement("div");
+    levelDiv.classList.add("levels");
+
+    house.floor_plans.forEach((level) => {
+        levelDiv.append(createLevelElement(level));
+    });
+
+    houseSection.append(levelDiv);
     return houseSection;
 };
 
-const createHTMLElement = (tagName, className = null, textContent = null) => {
-    const element = document.createElement(tagName);
-    if (className) {
-        element.classList.add(className);
-    }
-    if (textContent) {
-        element.textContent = textContent;
-    }
-    return element;
-};
-
-const createParagraphElement = (innerHTML) => {
-    const paragraph = createHTMLElement("p");
-    paragraph.innerHTML = innerHTML;
-    return paragraph;
-};
-
-const createFeaturesElement = (features) => {
-    const featuresParagraph = createHTMLElement("p");
-    featuresParagraph.innerHTML = `<strong>Features</strong>: ${features.map(feature => `* ${feature}`).join(' ')}`;
-    return featuresParagraph;
-};
-
 const createLevelElement = (level) => {
-    const levelSection = createHTMLElement("section", "level");
+    const levelSection = document.createElement("section");
+    levelSection.classList.add("level");
 
-    const h3 = createHTMLElement("h3", null, level.name);
-    levelSection.appendChild(h3);
+    const nameH3 = document.createElement("h3");
+    nameH3.textContent = level.name;
+    levelSection.append(nameH3);
 
-    const levelImage = createHTMLElement("img", "level-image");
+    const levelImage = document.createElement("img");
     levelImage.src = `https://portiaportia.github.io/json/images/house-plans/${level.image}`;
-    levelSection.appendChild(levelImage);
+    levelImage.classList.add("level-image");
+    levelSection.append(levelImage);
 
     return levelSection;
 };
