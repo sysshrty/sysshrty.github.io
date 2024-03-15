@@ -1,30 +1,5 @@
-const showHideNav = () => {
-    document.getElementById("nav-items").classList.toggle("hide-small");
-  };
-  
-    window.onload = () => {
-      document.getElementById("hamburger").onclick = toggleHamburger;
-    };
-  
-  
-  const evalForm = (e) => {
-    e.percentDefault();
-    console.log("here");
-  }
-  document.getElementById("my-form").onsubmit = evalForm;
-  document.getElementById("hamburger").onclick = showHideNav;
-  
-  const toggleHamburger = () => {
-    document.getElementById("nav-items").classList.toggle("hide-small");
-  };
-  
-  window.onload = () => {
-    document.getElementById("hamburger").onclick = toggleHamburger;
-  };
-
-
-  const getShoes = async() => {
-    const url = "https://sysshrty.github.io/json/menu.json";
+const getShoes = async() => {
+    const url = "https://sysshrty.github.io/CSCE242/json/menu.json";
 
     try {
         const response = await fetch(url);
@@ -33,9 +8,7 @@ const showHideNav = () => {
         console.log(error);
     }
 };
-
-  
-  const showCocktails = async () => {
+ const showCocktails = async () => {
     const cocktails = await getCocktails();
     const cocktailMenuDiv = document.getElementById("cocktail-menu");
   
