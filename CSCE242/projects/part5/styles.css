@@ -267,6 +267,15 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .cocktail-item {
+    flex-direction: column; /*flex-direction to column */
+    align-items: flex-start;
+}
+
+.cocktail-item img {
+    margin-left: 0; 
+    margin-bottom: 10px;
+}
   .col1of2 {
       flex: 1;
   }
