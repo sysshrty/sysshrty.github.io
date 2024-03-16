@@ -128,7 +128,7 @@
     height: auto;
     margin-bottom: 10px;
     max-height: 600px;
-    opacity: 0.2;
+    opacity: 0.5;
   }
   /*button*/
   .book-btn {
@@ -168,28 +168,6 @@
   }
   
   /*cocktail area*/
-  /* Adjustments for the cocktail menu */
-  /* Adjustments for the cocktail menu */
-.drink-menu {
-  margin-top: 20px;
-}
-
-/* Styling for individual cocktail items */
-.cocktail-item {
-  border: 1px solid #025959;
-  background: #272f30;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-/* Styling for cocktail name */
-.cocktail-item h2 {
-  color: #C2B84E;
-  margin-bottom: 5px;
-}
-
-/* Styling for cocktail images */
-/* Adjustments for the cocktail menu */
 .drink-menu {
   margin-top: 20px;
 }
@@ -201,6 +179,18 @@
   padding: 10px;
   margin-bottom: 10px;
   list-style-type: none;
+  display: flex; 
+  align-items: center;
+}
+
+.cocktail-item h2 {
+  color: #C2B84E;
+  margin-bottom: 5px;
+  flex: 1; 
+}
+
+.drink-menu {
+  margin-top: 20px;
 }
 
 /* Styling for cocktail name */
@@ -211,20 +201,17 @@
 
 /* Styling for cocktail images */
 .cocktail-item img {
-  max-width: 100%;
+  max-width: 100px; 
   height: auto;
   border: 5px solid #014040;
-  margin-bottom: 5px;
-  display: block;
+  margin-left: 20px;
 }
-
-/* Styling for other details like description and price */
 .cocktail-item p {
-  color: #fff;
+  color: #ead19e;
   margin-bottom: 5px;
+  flex: 1; 
 }
 
-/* Styling for alternate row colors */
 .cocktail-item:nth-child(even) {
   background-color: #1f3b3d;
 }
