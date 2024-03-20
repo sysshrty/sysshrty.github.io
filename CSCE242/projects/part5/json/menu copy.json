@@ -59,7 +59,7 @@
         "name": "Bioshock Bliss",
         "ingredients": ["Tequila", "Triple Sec", "Lime Juice", "Agave Nectar", "Salt"],
         "price": "$11.99",
-        "img_name": "images/Bioshockbliss.jpg",
+        "img_name": "images/bio.jpg",
         "description": "Find your paradise with the Bioshock Bliss, featuring tequila, triple sec, freshly squeezed lime juice, a touch of agave nectar, and a rim of salt for that perfect balance of sweet and savory.",
         "category": "Specialty Cocktails",
         "alcohol_content": "Medium",

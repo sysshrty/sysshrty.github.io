@@ -1,4 +1,31 @@
-const fetchCocktails = async () => {
+const showHideNav = () => {
+    document.getElementById("nav-items").classList.toggle("hide-small");
+  };
+  
+    window.onload = () => {
+      document.getElementById("hamburger").onclick = toggleHamburger;
+    };
+  
+  
+  const evalForm = (e) => {
+    e.percentDefault();
+    console.log("here");
+  }
+  document.getElementById("my-form").onsubmit = evalForm;
+  document.getElementById("hamburger").onclick = showHideNav;
+  
+  const toggleHamburger = () => {
+    document.getElementById("nav-items").classList.toggle("hide-small");
+};
+
+window.onload = () => {
+    document.getElementById("hamburger").onclick = toggleHamburger;
+};
+
+  
+  
+  
+  const fetchCocktails = async () => {
     const url = "https://sysshrty.github.io/CSCE242/json/menu.json";
     try {
         const response = await fetch(url);
