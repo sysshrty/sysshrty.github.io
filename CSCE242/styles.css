@@ -120,6 +120,21 @@ footer {
     margin-top: 10px;
     max-height:300px;
 }
+.assignment-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1px;
+    margin-top: 10px;
+    max-height: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.assignment-image.large {
+    max-height: 100%; 
+    transform: scale(1.2);
+}
+
 .assignment-content {
     text-align: center;
     padding: 15px;
