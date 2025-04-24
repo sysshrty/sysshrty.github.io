@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Sherry Begay-->
+<head>
+    <meta charset="UTF-8">
+    <title>Disney Wait Times </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">Disney's Holiday Wait Times - Sherry B</div>
+        <nav id="main-nav">
+            <ul id="main-nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#findings">Findings</a></li>
+                <li><a href="#citations">Citations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+    <p>Project Purpose:
+        My project purpose is to determine the optimal time for a family with a mid-range income to enjoy the most enchanting experience at Disney World Epcot and Magic Kingdom Holidays by analyzing the attraction wait times data. This will ensure that they receive the most value for their Disney experience. 
+        As many families around the world save their hard-working money to experience the magic of Walt Disney World. However, planning a trip can be challenging to all and especially when considering the long wait times for rides. The busiest times like holidays, spring break, and even summer break, often have excessive wait lines unless your purchase an expensive lighting passes package. 
+        By evaluating crowd levels and normal wait times, or by determining the ideal times of year to visit, this visualization project will assist many families in strategizing the best possibilities for organizing their amazing trip.  This data-driven advice from the "My Disney Experience app" helps families make the most of their trip without spending extra money.          
+    </p>
+    </main>
+    <main class="container">
+        <p>Summary / Visualization Access : 
+            According to The CN Traveler website (cntraveler), Orlando, Florida, is the most visited spot for families because Disney, SeaWorld, Universal Studios, and many more are in Orlando. Many Americans find the location filled with excitement and cherish time. Time is most valuable when it comes to vacationing. Time does also cost when you don’t think ahead. My visualization will be a clear understanding of how the wait times work and how to plan smarter.
+            
+            I noticed when I visited Disneyland or Disney World, I would look at their wait times on their Disney application. You don’t get the data outline when you get there. Their app shows the wait times live, and you must plan that day to run around and not enjoy your family time. A system couldn't work double; if you use my visualization, it will figure out the day-to-week data on certain holidays then you can compare the data with the current wait times. As an example, I’ll be using 3 years of data during March (spring break) and using that to figure out the trends. A requirement would be to write up the plans in an Excel sheet to have a smoother time at the park.
+            
+            To access the visualization, go to my public Tableau, where you have two different parks: one is the Magic Kingdom, and the other is Epcot. Magical Kingdom will have a histogram to switch from each week of March to seek a better understanding of wait times, and the Epcot will provide a line chart to capture the best options.
+            
+            How to explore the experience is to guide the buttons on the sides that say weeks of March. Then the graph will change to a smaller scale of trends in wait time data. When scrolling down the website, it will show Epcot as a line graph with the same format as Magic Kingdom. The interactive portion will enable you to click and see the times in detail to compare. For the Magic Kingdom days of the week, you can see my comparison of the days of the month and then scroll down to see the time frames. The interactive will show information needed to figure your family’s plan. Then, when at the park, you can now use Disney’s Park Wait Times for extra detail and have a great time without worrying about wasting time. 
+                     
+        </p>
+        </main>
+    <main class="container">
+
+        <!--chart 1 -->
+        <section class="preview">
+            <h2>Epcot Holiday Months Comparison</h2>
+            <p>The first graph shows the Epcot Holiday Months like November and December last year are showing a quick
+                overview of which months seem logical to plan your vacation time for your family. Use the right filtering tools
+                to break down if you don't want to wait unless than 45 mins or 20 mins. Move around the scroll to see what best first
+                your needs. Then once you have an idea, scroll down to see the detailed for each park. 
+			</p>
+            <div class='tableauPlaceholder' id='viz1' style='position: relative'>
+                <div class='tableauPlaceholder' id='viz1745471840199' style='position: relative'><noscript><a href='#'><img alt='Epcot Holiday Months Comparison ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ep&#47;EpcotHolidayMonths&#47;EpcotMos&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='EpcotHolidayMonths&#47;EpcotMos' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ep&#47;EpcotHolidayMonths&#47;EpcotMos&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745471840199');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='EpcotHolidayMonths/EpcotMos' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                </object>
+            </div>
+        </section>
+
+        <!-- chart 2 -->
+        <section class="preview">
+            <h2>Magic Kingdom Holidays Comparison</h2>
+            <p>This graph shows the Magic Kingdom's Holiday Months in November and December last year are showing a quick
+                overview of which months seem logical to plan your vacation. On this graph you're showed a graph that's interactive
+                with your mouse to get a detailed idea when to visit Magic Kingdom. Then once you have an idea, scroll down to see the detailed
+                of each Magic Kingdom month. 
+			</p>
+            <div class='tableauPlaceholder' id='viz2' style='position: relative'>
+                <div class='tableauPlaceholder' id='viz1745471681910' style='position: relative'><noscript><a href='#'><img alt='Magic Kingdom Holidays in 2024 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectforMagicKingdomHolidays&#47;DASHMGHOL&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FinalProjectforMagicKingdomHolidays&#47;DASHMGHOL' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectforMagicKingdomHolidays&#47;DASHMGHOL&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745471681910');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='FinalProjectforMagicKingdomHolidays/DASHMGHOL' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                </object>
+            </div>
+        </section>
+		<!-- chart 3 -->
+        <section class="preview">
+            <h2>Magic Kingdom During November 2024</h2>
+            <p>This bar graph shows the Magic Kingdom in November last year are showing a quick overview of which months seem logical to plan 
+                your vacation. On this graph you're showed a graph that's interactive with your mouse to get a detailed idea when to visit 
+                Magic Kingdom during those hectic months. Also on the right on the filter tool area, you can select a day to see the time of day data.
+                Then once you have an idea, take a note of these and plan around this. Once you get to the Disney Resort use their live wait times for 
+                extra assurance.  
+			</p>
+            <div class='tableauPlaceholder' id='viz2' style='position: relative'>
+                <div class='tableauPlaceholder' id='viz1745472550709' style='position: relative'><noscript><a href='#'><img alt='Magic Kingdom in November 2024 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DM&#47;DM7CW2FMN&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;DM7CW2FMN' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DM&#47;DM7CW2FMN&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745472550709');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='FinalProjectforMagicKingdomHolidays/DASHMGHOL' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                </object>
+            </div>
+        </section>
+		<!-- chart 5 -->
+        <section class="preview">
+            <h2>Magic Kingdom in December 2024</h2>
+            <p>This bar graph shows the Magic Kingdom in December last year are showing a quick overview of which months seem logical to plan 
+                your vacation. On this graph you're showed a graph that's interactive with your mouse to get a detailed idea when to visit 
+                Magic Kingdom. Also on the right on the filter tool area, you can select a day to see the time of day data.
+                Then once you have an idea, take a note of these and plan around this. Once you get to the Disney Resort use their live wait times for 
+                extra assurance.  
+			</p>
+            <div class='tableauPlaceholder' id='viz2' style='position: relative'>
+                <div class='tableauPlaceholder' id='viz1745521201402' style='position: relative'><noscript><a href='#'><img alt='Magic Kingdom in December 2024 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectMagicKingdomDecember&#47;MGDECTIMES&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FinalProjectMagicKingdomDecember&#47;MGDECTIMES' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectMagicKingdomDecember&#47;MGDECTIMES&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745521201402');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='FinalProjectforMagicKingdomHolidays/DASHMGHOL' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                </object>
+            </div>
+        </section>
+		<!-- chart 6 -->
+        <section class="preview">
+            <h2>Epcot Wait Times for December </h2>
+            <p>This line graph shows the Epcot in December last year are showing a quick overview of which months seem logical to plan 
+                your vacation. On this graph you're showed a graph that's interactive with your mouse to get a detailed idea when to visit 
+                Magic Kingdom. Also on the right on the filter tool area, you can select a day to see the time of day data.
+                Then once you have an idea, take a note of these and plan around this. Once you get to the Disney Resort use their live wait times for 
+                extra assurance.  
+			</p>
+            <div class='tableauPlaceholder' id='viz2' style='position: relative'>
+                <div class='tableauPlaceholder' id='viz1745472295221' style='position: relative'><noscript><a href='#'><img alt='Epcot in December 2024 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectfEpcotDecember&#47;EPDECTIMES&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FinalProjectfEpcotDecember&#47;EPDECTIMES' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FinalProjectfEpcotDecember&#47;EPDECTIMES&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745472295221');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='FinalProjectforMagicKingdomHolidays/DASHMGHOL' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                </object>
+            </div>
+        </section>
+        <!-- Analysis -->
+        <section id="findings" class="preview">
+            <h2>My Findings</h2>
+            <p>From my findings, I found the story outline and discover using these tools I can go to Epcot in December 19th, then scroll down to the last graph
+                click on the filter December 19th and the wait times show. This breaks down that from 8:30am to 10:00am and from 10:00pm to midnight are the most promisng
+                times to enjoy your hopper tickets or if you want to stay near at the resort to have some family downtime. Using Disney's application will have a live
+                feed and you will be proud of yourself that you picked the best days. 
+            </p>
+        </section>
+
+        <!-- my citations -->
+        <section id="citations" class="preview">
+            <h2>Citations</h2>
+            <p>LThrill Data. (n.d.). Wait times, lightning lane availability, & dining reservations | Thrill data. https://www.thrill-data.com/
+				What is the Best Day of the Week to Visit Each Walt Disney World Park? - WDW Passport. (n.d.). https://wdwpassport.com/tips-tricks/what-is-the-best-day-of-the-week-to-visit-each-walt-disney-world-park
+				https://plandisney.disney.go.com/question/family-package-adults-child-go-december-include-christmas-556052/
+                cntraveler https://www.cntraveler.com/gallery/family-vacation-spots-us#:~:text=Home%20to%20more%20theme%20parks,restaurants%20for%20the%20whole%20family. 
+			</p>
+        </section>
+
+    </main>
+</body>
+</html>
